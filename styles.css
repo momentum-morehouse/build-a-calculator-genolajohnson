@@ -1,10 +1,10 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Cambria, sans-serif;
-    font-weight: 300;  
+    font-weight: 100;  
 }
 body {
-    padding: 0%;
+    padding: 0;
     margin: 0;
     background-color: darkcyan
 }
@@ -24,7 +24,7 @@ body {
     background-color:bisque;
 }
 
-.calculator-grid > button.hover {
+.calculator-grid > button:hover {
     background-color: whitesmoke;
 }
 
@@ -32,19 +32,24 @@ body {
     grid-column: span 2;
 }
 
-.outpost {
+.output {
     grid-column: 1 / -1;
-    background-color: black
+    background-color: black;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    flex-direction: coloum;
+    flex-direction: column;
     padding: 10px;
     word-wrap: break-word;
-    word-break: brea-all;
+    word-break: break-all;
 }
 
 .output .previous-operand {
-    color: pink
-    font-size: 2.5rem: aliceblue
+    color: pink;
+    font-size: 1.5rem: aliceblue;
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
 }
+
